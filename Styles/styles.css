@@ -12,6 +12,11 @@
   font-family: 'Nunito';
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+  padding-top: 20px;
+}
+
 /* About me section */
 
 .selfie {
@@ -114,7 +119,7 @@ h3 {
 .project {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #f8f8f8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin: 8vh;
   min-width: 200px;
@@ -247,6 +252,7 @@ footer i {
 /* ------------------------------------------------------------------ */
 
 @media (max-width: 480px) {
+  
   .secondSection {
     display: grid;
     grid-template-columns: 100%;
