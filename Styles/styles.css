@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(../Resources/Nunito-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../Resources/Poppins-Medium.ttf);
+}
+
+* {
+  font-family: 'Nunito';
+}
+
+/* About me section */
+
+.selfie {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.firstSection{
+  display: flex;
+  align-items: center;
+  max-width: 980px;
+  margin: auto;
+  position: relative;
+  padding-top: 20px;
+}
+
+.aboutMe {
+  background-color: white;
+  height: 35vh;
+  min-height: 300px;
+  width: 600px;
+  min-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.aboutMe h2, p {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.links {
+  display: flex;
+  justify-content: right;
+  padding-right: 30px;
+}
+
+.links i{
+  font-size: 40px; 
+  padding: 10px;
+}
+
+.nameImg {
+  display: flex;
+}
+
+h1 {
+  color: #60e7cf;
+  position: absolute;
+  font-family: 'Poppins';
+  font-size: 4vh;
+  top: -15px;
+  left: 90px;
+}
+
+/* My work section */
+
+h3 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.divRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.secondSection {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+}
+
+.divRow i {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 50px;
+}
+
+.secondSection img{
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  min-width: 200px;
+}
+
+.secondSection h4 {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.secondSection p {
+  padding-left: 20;
+  padding-right: 20;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 8vh;
+  min-width: 200px;
+}
+
+/* Footer styles */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2C645B;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+}
+
+footer img {
+  width: 100%;
+  min-width: 500px;
+  max-width: 700px;
+  height: auto;
+  padding: 50px;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h5 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+footer i {
+  color: white;
+  font-size: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.contact p {
+  margin: 0;
+  padding-left: 30px;
+}
+
+.devicon-github-original {
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------------Tablet Styles------------------------- */
+/* ------------------------------------------------------------------ */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+  .selfie {
+    left: 2vw;
+    position: relative;
+    top: -40px;
+    height: 500px;
+    width: 40vw;
+  }
+  
+  .firstSection{
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .aboutMe {
+    height: auto;
+    width: 600px;
+    min-width: 500px;
+    margin-top: 200px;
+    margin-left: -100px;
+  }
+
+  .aboutMe p {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  h2 {
+    margin-left: 130px;
+  }
+
+  h1 {
+    padding-top: 40px;
+    padding-left: 20vw;
+  }
+  
+  .secondSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  }
+
+  .links {
+    padding-right: 150px;
+  }
+
+  .project {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 200px;
+  }
+
+  .secondSection img{
+    min-width: 200px;
+  }
+
+  footer img {
+    display: none;
+  }
+
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------------Phone Styles-------------------------- */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 480px) {
+  .secondSection {
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+/* Background */
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    background: #f6f6f6;
+  }
+  
+  html:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2000px;
+    height: 400px;
+    overflow: hidden;
+    background: #2C645B;
+    transform: skew(97deg);
+    transform-origin:top;
+    border-style: solid;
+	  border-color: transparent;
+	  border-width: 10vh 50vw;
+    z-index: -1;
+    box-shadow: 0 5px 5px 5px rgb(32, 32, 32)
+}
