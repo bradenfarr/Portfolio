@@ -104,6 +104,7 @@ h3 {
   height: auto;
   box-shadow: none;
   min-width: 200px;
+  cursor: pointer;
 }
 
 .secondSection h4 {
@@ -123,6 +124,12 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin: 8vh;
   min-width: 200px;
+}
+
+.project:active {
+  box-shadow: inset 1px 2px 5px #777;
+  transform: translateY(2px);
+  background: #e5e5e5;
 }
 
 /* Footer styles */
